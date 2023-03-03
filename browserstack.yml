@@ -1,0 +1,37 @@
+# Set BrowserStack Credentials
+# Add your BrowserStack userName and acccessKey here or set BROWSERSTACK_USERNAME and
+# BROWSERSTACK_ACCESS_KEY as env variables
+userName: YOUR_USERNAME
+accessKey: YOUR_ACCESS_KEY
+
+# BrowserStack Reporting
+projectName: BrowserStack Hackathon 2.0
+buildName: mocha-browserstack-automate-and-percy-example
+buildIdentifier: "#${DATE_TIME}"
+
+# Platforms (Browsers / Devices to test)
+platforms:
+  - os: OS X
+    osVersion: Big Sur
+    browserName: Chrome
+    browserVersion: latest
+  - os: Windows
+    osVersion: 10
+    browserName: Edge
+    browserVersion: latest
+  - deviceName: Samsung Galaxy S22 Ultra
+    browserName: chrome
+    osVersion: 12.0
+
+parallelsPerPlatform: 1
+
+# BrowserStack Local (For localhost, staging/private websites)
+browserstackLocal: false
+
+# Debugging features
+debug: false
+networkLogs: false
+consoleLogs: errors
+
+# Test Observability
+testObservability: true

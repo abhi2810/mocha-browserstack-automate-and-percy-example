@@ -1,0 +1,19 @@
+{
+  "name": "mocha-browserstack-automate-and-percy-example",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "browserstack-node-sdk mocha ./src/tests --timeout=60000",
+    "test:percy": "npx percy:exec -- browserstack-node-sdk mocha ./src/tests --timeout=60000"
+  },
+  "author": "Abhi Singh",
+  "license": "ISC",
+  "devDependencies": {
+    "@percy/cli": "^1.20.2",
+    "@percy/selenium-webdriver": "^1.0.2",
+    "browserstack-node-sdk": "^1.6.2",
+    "mocha": "^10.2.0",
+    "selenium-webdriver": "^4.8.1"
+  }
+}
