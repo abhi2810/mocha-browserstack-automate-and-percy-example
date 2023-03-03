@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "test": "browserstack-node-sdk mocha ./src/tests --timeout=60000",
-    "test:percy": "npx percy:exec -- browserstack-node-sdk mocha ./src/tests --timeout=60000"
+    "test:percy": "npx percy exec -- browserstack-node-sdk mocha ./src/tests --timeout=60000"
   },
   "author": "Abhi Singh",
   "license": "ISC",
